@@ -1,3 +1,5 @@
+# Flutter MaterialColor Generator
+
 This package allows you to generate a MaterialColor from a Color,
 which useful when wanting to use a custom color for ThemeData.primarySwatch.
 
