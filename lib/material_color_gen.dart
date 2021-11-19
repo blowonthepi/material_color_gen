@@ -2,13 +2,15 @@ library material_color_gen;
 
 import 'package:flutter/material.dart';
 
-
-class MaterialColorGenerator {
-
+extension MaterialColorGenerator on Color {
   /// Generates and returns a MaterialColor from a single Color.
   ///
   /// Useful for easily conforming to [ThemeData.primarySwatch].
-  MaterialColor createMaterialColor(Color color) {
+  MaterialColor toMaterialColor() {
+    return _createMaterialColor(this);
+  }
+
+  MaterialColor _createMaterialColor(Color color) {
     List strengths = <double>[.05];
     final swatch = <int, Color>{};
     final int r = color.red, g = color.green, b = color.blue;
@@ -28,3 +30,4 @@ class MaterialColorGenerator {
     return MaterialColor(color.value, swatch);
   }
 }
+

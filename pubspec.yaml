@@ -1,7 +1,7 @@
 name: material_color_gen
 description: A Flutter package to generate a MaterialColor from a Color
 version: 1.0.0
-homepage: liamedwardsnz.com
+homepage: https://blowonthepi.dev
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
